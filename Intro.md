@@ -11,3 +11,10 @@
 - bq mk -t etl_db.tb_voos (Creating a table using BigQuery)
 - bq load --autodetect --source_format=NEWLINE_DELIMITED_JSON etl_db.tb_voos gs://base_voos_sergio/raw_data/2023-07-30.json
 - bq load --schema schema.json --source_format=NEWLINE_DELIMITED_JSON etl_db.tb_voos gs://base_voos_sergio/raw_data/2023-07-30.json (Using a file Schema)
+
+
+
+## 2 Partitioned Table
+- bq mk --table --schema schema.json --time_partitioning_field flight_date etl_db.tb_voss_particionada 
+- bq load --source_format=NEWLINE_DELIMITED_JSON etl_db.tb_voss_particionada gs://base_voos_sergio/raw_data/2023-07-30.json
+
