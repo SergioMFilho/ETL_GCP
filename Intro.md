@@ -1,0 +1,4 @@
+- Installing the gcloud CLI
+- Create a project
+- Go to cloud storage > Create a bucket > Create a folder > Uploading files
+- Go to BigQuery > Create dataset > Create table > Google Cloud Storage > Create table > Select the data files amd create a table 
